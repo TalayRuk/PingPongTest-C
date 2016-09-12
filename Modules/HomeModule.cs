@@ -8,6 +8,7 @@ namespace PingPong{
   {
     public HomeModule()
     {
+      Get["/"] =_=> View{"index.cshtml"};
 
     }
   }

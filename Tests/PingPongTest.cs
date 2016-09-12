@@ -29,26 +29,21 @@ namespace PingPong
       Assert.Equal(expected, result);
     }
 
+    [Fact]
+    public void IsPingPong_InputIsThree_true()
+    {
+      string[] expected = {"1", "2", "ping"};
+      List<string> result = PingPongGame.PlayPingPong(3);
+      Assert.Equal(expected, result);
+    }
 
+    [Fact]
+    public void IsPingPong_InputIsFifteen_true()
+    {
+      string[] expected = {"1", "2", "ping", "4", "pong", "ping", "7", "8", "ping", "pong", "11", "ping", "13", "14", "ping-pong"};
+      List<string> result = PingPongGame.PlayPingPong(15);
+      Assert.Equal(expected, result);
 
-    // [Fact]
-    // public void IsPingPong_ForNumberDivisibleByThree_true()
-    // {
-    //   PingPong testPingPong = new PingPong();
-    //   Assert.Equal(true, testPingPong.IsPingPong(3));
-    // }
-    // [Fact]
-    // public void IsPingPong_ForNumberDivisibleByFive_true()
-    // {
-    //   PingPong testPingPong = new PingPong();
-    //   Assert.Equal(true, testPingPong.IsPingPong(5));
-    // }
-    // [Fact]
-    // public void IsPingPong_ForNumberDivisibleByFifteen_true()
-    // {
-    //   PingPong testPingPong = new PingPong();
-    //   Assert.Equal(true, testPingPong.IsPingPong(15));
-    // }
-
+    }
   }
 }

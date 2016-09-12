@@ -24,6 +24,7 @@ namespace PingPong
         }
         else {
           instances.Add(i.ToString());
+          //need to change i into string by .ToString()
         }
         // instances.Add("1");
       }
@@ -31,6 +32,5 @@ namespace PingPong
       //return instances need to be outside of the bracket
       //so that it won't store the result & repeating it.
     }
-
   }
 }
