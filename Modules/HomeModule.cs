@@ -1,5 +1,6 @@
 using Nancy;
-using PingPong.Objects;
+using System;
+using PingPong;
 using System.Collections.Generic;
 
 namespace PingPong{
@@ -7,7 +8,7 @@ namespace PingPong{
   {
     public HomeModule()
     {
-      
+
     }
   }
 }
