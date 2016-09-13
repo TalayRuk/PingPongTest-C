@@ -5,7 +5,10 @@
 else
 {
   @foreach (var pingPongNumbers in Model){
-    <h4>@pingPongNumbers.GetNumber()</h4>
+    <ul>
+      <li>@pingPongNumbers.GetNumber()</li>
+    </ul>
+  
   }
   <a href="/">Play Again!</a>
 }

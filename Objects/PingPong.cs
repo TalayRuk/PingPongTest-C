@@ -32,5 +32,17 @@ namespace PingPong
       //return instances need to be outside of the bracket
       //so that it won't store the result & repeating it.
     }
+    public string GetNumber()
+    {
+      return pingPong-number;
+    }
+    public void SetNumber()
+    {
+      instances = pingPongNumbers;
+    }
+    public static List<string> GetAll()
+    {
+      return instances;
+    }
   }
 }
