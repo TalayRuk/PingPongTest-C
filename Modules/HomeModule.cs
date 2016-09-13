@@ -14,8 +14,8 @@ namespace PingPong
       };
 
       Post["/show-result"] = _ => {
-        PingPongGame newPingPongplay = new PingPongGame (Request.Form["pingPong-number"]);
-        newPingPongplay.PlayPingPong();
+        PingPongGame newPingPongplay = new PingPongGame ();
+        newPingPongplay.PlayPingPong(Request.Form["pingPong-number"]);
         List<string> newPingPongplay = PingPongGame.GetAll();
         return View["show-result.cshtml", newPingPongplay];
 

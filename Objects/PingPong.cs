@@ -5,13 +5,20 @@ namespace PingPong
   public class PingPongGame
   {
     //variable
-
-    public static List<string> PlayPingPong(int userNum)
+    private string _number;
+    public PingPongGame(Number)
     {
-      List<string> instances = new List<string> {};
+      Number=_number;
+    }
+    List<string> instances = new List<string> {};
+
+    public static List<string> PlayPingPong()
+    {
       // list needed to be inside the bracket in order to
       //identify the function and w/o giving any error of
       //running the result twice.
+      int userNum = this._number;
+      // int userNum = this.GetNumber();
       for (int i = 1; i <= userNum; i++) {
         if (i % 15 == 0) {
           instances.Add("ping-pong");
@@ -34,11 +41,11 @@ namespace PingPong
     }
     public string GetNumber()
     {
-      return pingPong-number;
+      return _number;
     }
-    public void SetNumber()
+    public void SetNumber(int num)
     {
-      instances = pingPongNumbers;
+       _number=num;
     }
     public static List<string> GetAll()
     {
